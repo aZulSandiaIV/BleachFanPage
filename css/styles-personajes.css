@@ -1,56 +1,91 @@
-/* Estilos solo para personajes.html */
+/* Contenedor general centrado y con fondo blanco */
+main {
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px 40px 24px;
+}
+
+/* Título centrado y separado */
+.text-section {
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 2.3rem;
+    color: #222;
+    font-weight: 600;
+    background: none;
+}
+
+/* Grid de personajes centrado */
 .personajes-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Grid de imágenes */
+.personajes-item {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    padding: 20px 5%;
-}
-
-.personaje-item {
-    cursor: pointer;
-    text-align: center;
-}
-
-.personaje-item img {
+    gap: 22px;
     width: 100%;
-    max-width: 220px;
-    height: 220px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Estilo de los enlaces de imagen */
+.personajes-item a {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+
+/* Efecto hover */
+.personajes-item a:hover {
+    transform: scale(1.045);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* Imágenes más anchas y uniformes */
+.personajes-item img {
+    width: 100%;
+    height: 210px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    transition: transform 0.2s;
-}
-
-.personaje-item img:hover {
-    transform: scale(1.08);
-}
-
-.personaje-nombre {
-    margin-top: 6px;
-    padding: 0;
-    width: 100%;
-    max-width: 220px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #222;
-    background-color: rgba(255, 255, 255, 0.80);
-    margin-left: auto;
-    margin-right: auto;
     display: block;
-    text-align: center;
-    border-radius: 8px;
+    background: #eee;
 }
 
-.personaje-descripcion-principal {
-    margin: 30px auto 0 auto;
-    max-width: 600px;
-    background: rgba(255,255,255,0.95);
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-    padding: 24px;
-    display: none;
+/* Responsive para tablets */
+@media (max-width: 1000px) {
+    main {
+        max-width: 98vw;
+        padding: 18px 6px 28px 6px;
+    }
+    .personajes-item {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+    .personajes-item img {
+        height: 170px;
+    }
 }
 
-.personaje-descripcion-principal.active {
-    display: block;
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .personajes-item {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+    }
+    .personajes-item img {
+        height: 130px;
+    }
+    .text-section {
+        font-size: 1.5rem;
+    }
 }

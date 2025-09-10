@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="iso-8859-1">
+    <meta charset="ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles-general.css">
     <link rel="stylesheet" type="text/css" href="css/styles-personajes.css">
-    <title>Personajes - Bleach Página Fan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <title>Bleach - GalerÃ­a</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">
             <img src="img/bleach_logo.webp" alt="Logo de Bleach">
         </a>
-        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <button class="menu-toggle" aria-label="Abrir menÃº">&#9776;</button>
         <nav class="nav-links">
             <a href="personajes.html">Personajes</a>
             <a href="episodios.html">Episodios</a>
@@ -21,61 +22,51 @@
         </nav>
     </header>
     <main>
-        <h1 style="text-align:center; margin-top:40px;">Personajes Principales</h1>
-        <div class="personajes-grid">
-            <div class="personaje-item" data-nombre="Ichigo Kurosaki" data-descripcion="El protagonista de Bleach, Ichigo es un adolescente que obtiene poderes de Segador de Almas y lucha contra los Hollows para proteger a sus seres queridos.">
-                <img src="img/personajes/ichigo.jpg" alt="Ichigo Kurosaki">
-                <div class="personaje-nombre">Ichigo Kurosaki</div>
+        <h1 class = "text-section">GalerÃ­a de Personajes</h1>
+        <section class="personajes-grid">
+            
+            <div class="personajes-item">
+                <a href="img/personajes/ichigo.webp" data-lightbox="personajes" data-title="Ichigo Kurosaki">
+                    <img src="img/personajes/ichigo.webp" alt="Ichigo Kurosaki">
+                </a>
+                <a href="img/personajes/rukia.webp" data-lightbox="personajes" data-title="Rukia Kuchiki">
+                    <img src="img/personajes/rukia.webp" alt="Rukia Kuchiki">
+                </a>
+                <a href="img/personajes/orihime.jpg" data-lightbox="personajes" data-title="Orihime Inoue">
+                    <img src="img/personajes/orihime.jpg" alt="Orihime Inoue">
+                </a>
+                <a href="img/personajes/chad.jpg" data-lightbox="personajes" data-title="Yasutora Sado (Chad)">
+                    <img src="img/personajes/chad.jpg" alt="Yasutora Sado (Chad)">
+                </a>
+                <a href="img/personajes/uryuu.jpg" data-lightbox="personajes" data-title="Uryuu Ishida">
+                    <img src="img/personajes/uryuu.jpg" alt="Uryuu Ishida">
+                </a>
+                <a href="img/personajes/byakuya.jpg" data-lightbox="personajes" data-title="Byakuya Kuchiki">
+                    <img src="img/personajes/byakuya.jpg" alt="Byakuya Kuchiki">
+                </a>
+                <a href="img/personajes/renji.jpg" data-lightbox="personajes" data-title="Renji Abarai">
+                    <img src="img/personajes/renji.jpg" alt="Renji Abarai">
+                </a>
+                <a href="img/personajes/kenpachi.jpg" data-lightbox="personajes" data-title="Kenpachi Zaraki">
+                    <img src="img/personajes/kenpachi.jpg" alt="Kenpachi Zaraki">
+                </a>
+                <a href="img/personajes/toshiro.jpg" data-lightbox="personajes" data-title="Toshiro Hitsugaya">
+                    <img src="img/personajes/toshiro.jpg" alt="Toshiro Hitsugaya">
+                </a>
+                <a href="img/personajes/soifon.jpeg" data-lightbox="personajes" data-title="Soifon">
+                    <img src="img/personajes/soifon.jpeg" alt="Soifon">
+                </a>
+                <a href="img/personajes/shunsui.jpg_large" data-lightbox="personajes" data-title="Shunsui Kyoraku">
+                    <img src="img/personajes/shunsui.jpg_large" alt="Shunsui Kyoraku">
+                </a>
+                <a href="img/personajes/urahara.jpg" data-lightbox="personajes" data-title="Kisuke Urahara">
+                    <img src="img/personajes/urahara.jpg" alt="Kisuke Urahara">
+                </a>
             </div>
-            <div class="personaje-item" data-nombre="Rukia Kuchiki" data-descripcion="Rukia es una Segadora de Almas que transfiere sus poderes a Ichigo y lo guía en su nueva vida como protector de almas.">
-                <img src="img/personajes/rukia.jpg" alt="Rukia Kuchiki">
-                <div class="personaje-nombre">Rukia Kuchiki</div>
-            </div>
-            <div class="personaje-item" data-nombre="Orihime Inoue" data-descripcion="Orihime es una amiga de Ichigo con habilidades curativas únicas y un gran corazón.">
-                <img src="img/personajes/orihime.jpg" alt="Orihime Inoue">
-                <div class="personaje-nombre">Orihime Inoue</div>
-            </div>
-            <div class="personaje-item" data-nombre="Yasutora Sado (Chad)" data-descripcion="Chad es el amigo fuerte y leal de Ichigo, con poderes espirituales que se manifiestan en sus brazos.">
-                <img src="img/personajes/chad.jpg" alt="Yasutora Sado">
-                <div class="personaje-nombre">Yasutora Sado</div>
-            </div>
-            <div class="personaje-item" data-nombre="Uryuu Ishida" data-descripcion="Uryuu es un Quincy, descendiente de humanos con poderes espirituales, y rival/amigo de Ichigo.">
-                <img src="img/personajes/uryuu.jpg" alt="Uryuu Ishida">
-                <div class="personaje-nombre">Uryuu Ishida</div>
-            </div>
-            <div class="personaje-item" data-nombre="Renji Abarai" data-descripcion="Renji es el teniente del Sexto Escuadrón y amigo de Rukia, conocido por su espíritu combativo.">
-                <img src="img/personajes/renji.jpg" alt="Renji Abarai">
-                <div class="personaje-nombre">Renji Abarai</div>
-            </div>
-            <div class="personaje-item" data-nombre="Byakuya Kuchiki" data-descripcion="Byakuya es el capitán del Sexto Escuadrón y hermano adoptivo de Rukia, famoso por su nobleza y poder.">
-                <img src="img/personajes/byakuya.jpg" alt="Byakuya Kuchiki">
-                <div class="personaje-nombre">Byakuya Kuchiki</div>
-            </div>
-            <div class="personaje-item" data-nombre="Toshiro Hitsugaya" data-descripcion="Toshiro es el joven capitán del Décimo Escuadrón, conocido por su inteligencia y control sobre el hielo.">
-                <img src="img/personajes/toshiro.jpg" alt="Toshiro Hitsugaya">
-                <div class="personaje-nombre">Toshiro Hitsugaya</div>
-            </div>
-            <div class="personaje-item" data-nombre="Kenpachi Zaraki" data-descripcion="Kenpachi es el capitán del Undécimo Escuadrón, famoso por su amor a la batalla y su fuerza brutal.">
-                <img src="img/personajes/kenpachi.jpg" alt="Kenpachi Zaraki">
-                <div class="personaje-nombre">Kenpachi Zaraki</div>
-            </div>
-            <div class="personaje-item" data-nombre="Soi Fon" data-descripcion="Soi Fon es la capitana del Segundo Escuadrón, experta en técnicas de sigilo y asesinato.">
-                <img src="img/personajes/soifon.jpg" alt="Soi Fon">
-                <div class="personaje-nombre">Soi Fon</div>
-            </div>
-            <div class="personaje-item" data-nombre="Shunsui Kyoraku" data-descripcion="Shunsui es el capitán del Octavo Escuadrón, conocido por su actitud relajada y su gran poder.">
-                <img src="img/personajes/shunsui.jpg" alt="Shunsui Kyoraku">
-                <div class="personaje-nombre">Shunsui Kyoraku</div>
-            </div>
-            <div class="personaje-item" data-nombre="Kisuke Urahara" data-descripcion="Kisuke es el misterioso dueño de la tienda Urahara, antiguo capitán y mentor de Ichigo.">
-                <img src="img/personajes/urahara.jpg" alt="Kisuke Urahara">
-                <div class="personaje-nombre">Kisuke Urahara</div>
-            </div>
-        </div>
-        <div id="descripcion-personaje" class="personaje-descripcion-principal"></div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 Página Fan de Bleach. Todos los derechos reservados.</p>
+        <p>&copy; 2025 PÃ¡gina Fan de Bleach. Todos los derechos reservados.</p>
         <div class="social-icons">
             <a href="https://www.instagram.com/azul_chiquito" target="_blank">
                 <img src="img/instagram.png" alt="Instagram" />
@@ -88,27 +79,12 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <script>
-        // Menú hamburguesa
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('show');
-        });
-
-        // Mostrar descripción de personaje
-        const items = document.querySelectorAll('.personaje-item');
-        const descripcion = document.getElementById('descripcion-personaje');
-        items.forEach(item => {
-            item.addEventListener('click', () => {
-                descripcion.innerHTML = `
-                    <h2>${item.dataset.nombre}</h2>
-                    <p>${item.dataset.descripcion}</p>
-                    <img src="${item.querySelector('img').src}" alt="${item.dataset.nombre}" style="max-width:180px; border-radius:8px; margin-top:16px;">
-                `;
-                descripcion.classList.add('active');
-                window.scrollTo({ top: descripcion.offsetTop - 40, behavior: 'smooth' });
-            });
         });
     </script>
 </body>
