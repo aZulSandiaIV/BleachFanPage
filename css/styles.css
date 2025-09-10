@@ -1,0 +1,229 @@
+body {
+    background-image: url('../img/Bleach_Fondo2.jpg'); /* Ajusta la ruta según tu carpeta */
+    background-size: cover;      /* La imagen cubre toda la pantalla */
+    background-repeat: no-repeat;/* No se repite */
+    background-position: center; /* Centrada */
+    background-attachment: scroll; /* Fija la imagen al hacer scroll */
+    padding: 0 0 10% 0; /* Espacio abajo */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    font-size: large;
+    margin: 0;
+}
+
+section {
+    margin-bottom: 10%;
+}
+
+/* Estilos para el header y la navegación */
+header {
+    background: linear-gradient(to bottom right, #ffffff, #00c2fd);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+
+}
+
+.logo img {
+    height: 15%;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #000; /* <-- Añade esta línea */
+}
+
+.nav-links a{
+    transition: background 0.2s;
+    transition: transform 0.2s;
+}
+.nav-links a:hover {
+    background: #00c2fd;
+    transform: scale(1.1);
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #000;
+}
+
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        border-radius: 8px;
+        padding: 10px;
+        z-index: 100;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header {
+        position: relative;
+    }
+}
+
+/* Bloque general para secciones */
+.text-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    border-radius: 8px;
+}
+
+.hollowminilogo {
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+    float: right; /* Alinea la imagen a la derecha */
+}
+.hollowminilogo:hover {
+    transition: transform 0.4s;
+    transform:rotate(360deg);
+}
+
+/* Estilos para la sección de descripción */
+.bleach-Description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Hace que los hijos tengan el mismo alto */
+    gap: 20px;
+    padding: 5% 15% 0% 15%;
+}
+
+.bleach-Description #banner {
+    width: auto;      
+    height: auto; 
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bleach-Description .text-section {
+    max-width: 600px;
+}
+
+/* Estilos para el formulario de contacto */
+.bleach-FormularioDeContacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 5% 15% 0% 15%;
+}
+
+.bleach-FormularioDeContacto .text-section{
+    max-width: 600px;
+}
+
+/* Estilos para la cuadrícula de personajes */
+.personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px; /* Menor espacio entre personajes */
+    padding: 20px 5%; /* Menos padding */
+}
+
+.personaje-item {
+    cursor: pointer;
+    text-align: center;
+}
+
+.personaje-item img {
+    width: 100%;
+    max-width: 220px; /* Imágenes más grandes */
+    height: 220px;    /* Altura fija para uniformidad */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.personaje-item img:hover {
+    transform: scale(1.08);
+}
+
+.personaje-nombre {
+    margin-top: 6px;
+    padding: 0;
+    width: 100%;
+    max-width: 220px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.80);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.personaje-descripcion-principal {
+    margin: 30px auto 0 auto;
+    max-width: 600px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 24px;
+    display: none;
+}
+
+.personaje-descripcion-principal.active {
+    display: block;
+}
+
+/* Estilos para el fotter */
+footer {
+    background: linear-gradient(to bottom right, #ffffff, #00c2fd);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+footer .social-icons img {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.15);
+}

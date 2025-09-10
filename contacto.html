@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles-general.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-contacto.css">
+    <title>Contacto - Bleach Página Fan</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+         <img src="img/bleach_logo.webp" alt="Logo de Bleach">
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-links">
+            <a href="personajes.html">Personajes</a>
+            <a href="episodios.html">Episodios</a>
+            <a href="manga.html">Manga</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="bleach-FormularioDeContacto">
+            <div class="text-section">
+                <h1>Contacto</h1>
+                <p>
+                    ¿Tienes alguna duda, sugerencia o comentario? ¡Escríbenos!
+                </p>
+                <form action="#" method="post">
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea><br><br>
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <img class="hollowminilogo" src="img/hollowlogo.png" alt="Logo de los Hollows">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Página Fan de Bleach. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/azul_chiquito" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="img/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://discord.com" target="_blank">
+                <img src="img/discord.webp" alt="Discord" />
+            </a>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

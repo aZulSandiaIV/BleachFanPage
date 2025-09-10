@@ -1,0 +1,56 @@
+/* Estilos solo para personajes.html */
+.personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 20px 5%;
+}
+
+.personaje-item {
+    cursor: pointer;
+    text-align: center;
+}
+
+.personaje-item img {
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.personaje-item img:hover {
+    transform: scale(1.08);
+}
+
+.personaje-nombre {
+    margin-top: 6px;
+    padding: 0;
+    width: 100%;
+    max-width: 220px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.80);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.personaje-descripcion-principal {
+    margin: 30px auto 0 auto;
+    max-width: 600px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 24px;
+    display: none;
+}
+
+.personaje-descripcion-principal.active {
+    display: block;
+}
