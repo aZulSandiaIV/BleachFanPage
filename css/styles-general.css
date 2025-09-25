@@ -4,17 +4,32 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     padding: 0 0 10% 0;
     font-family: serif, sans-serif;
     font-size: large;
     margin: 0;
 }
 
-.text-section {
+.background-overlay {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
+}
+
+.box-divisor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.box-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
 }
 
 .hollowminilogo {
