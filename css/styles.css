@@ -5,7 +5,7 @@ body {
     background-position: center; /* Centrada */
     background-attachment: scroll; /* Fija la imagen al hacer scroll */
     padding: 0 0 10% 0; /* Espacio abajo */
-    font-family: Arial, sans-serif; /* Fuente legible */
+    font-family: serif; /* Fuente legible */
     font-size: large;
     margin: 0;
 }
