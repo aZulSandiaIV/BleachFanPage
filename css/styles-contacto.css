@@ -1,14 +1,4 @@
 /* Estilos solo para contacto.html */
-.bleach-FormularioDeContacto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 20px;
-    padding: 5% 15% 0% 15%;
+.box-divisor{ 
+    margin-bottom: 20%;
 }
-
-.bleach-FormularioDeContacto .text-section {
-    max-width: 600px;
-}
-

@@ -8,6 +8,13 @@
     padding: 5% 15% 0% 15%;
 }
 
+@media (max-width: 900px) {
+    .bleach-Description {
+        margin-bottom: 20%; /*Esto es un arreglo malisimo, un parche, pero sino el footer queda encima del contenido.*/
+                            /*Si sabe una solucion estoy encantado de escucharla*/
+    }
+}
+
 .bleach-Description #banner {
     width: auto;
     height: auto;

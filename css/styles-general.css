@@ -148,3 +148,7 @@ footer .social-icons img {
 footer .social-icons img:hover {
     transform: scale(1.15);
 }
+
+footer p {
+    font-size: clamp(12px, 2.5vw, 16px);
+}
